@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastel Task App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Rajdhani:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>📒 Aplikasi Catatan Tugas</h1>
+  <button id="openTaskBtn">+ Add Task</button>
+</header>
+
+<div id="taskContainer"></div>
+
+<!-- Modal -->
+<div id="taskModal" class="modal">
+  <div class="modal-content">
+    <h2>Tambah Mata Pelajaran</h2>
+    <input type="text" id="subjectName" placeholder="Nama Mata Pelajaran">
+    <input type="date" id="deadline">
+    <select id="emoji">
+      <option>📚</option>
+      <option>✏️</option>
+      <option>🔬</option>
+      <option>🧮</option>
+      <option>🌍</option>
+      <option>🎨</option>
+    </select>
+    <input type="color" id="colorPicker" value="#00f5ff">
+
+    <div class="button-group">
+      <button id="saveTaskBtn">Simpan</button>
+      <button id="cancelTaskBtn">Batal</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
